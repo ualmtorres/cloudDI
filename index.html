@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img  src="images/azul.png" alt="First slide"  >
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+             <h1>OpenStack-DI</h1>
+              <p>Infraestructura como servicio (IaaS). La base de los servicios de Cloud-DI. Crea con OpenStack tus máquinas virtuales</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/azul.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+             <h1>LDAP</h1>
+              <p>Servicio de autenticación de usuarios. Necesario para acceder a la mayoría de servicios de Cloud-DI (ownCloud, GitLab, SVN, Redmine, Moodle, ...)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/azul.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+              <h1>ownCloud</h1>
+              <p>Servicio de almacenamiento de archivos. Un <em>Dropbox</em> privado</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="third-slide" src="images/azul.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+              <h1>edX</h1>
+              <p>Plataforma de formación online. Fórmate en el uso básico de OpenStack-DI y en los servicios Cloud-DI</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/azul.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+              <h1>Redmine</h1>
+              <p>Gestión de proyectos. Gestiona también las peticiones de alta de servicios, solución de errores, y nuevas características de Cloud-DI</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/azul.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+              <h1>GitLab</h1>
+              <p>Sistema de control de versiones Git. Nuestro <i>Github</i> privado</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/azul.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img src = 'images/logoDI.png' height = "60px">
+              <h1>Moodle</h1>
+              <p>Plataforma de formación online</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Four columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3 servicio">
+          <a href = 'http://openstack.di.ual.es' target = '_blank'>
+            <img src="images/openstack-logo.jpg" class="logo">
+          </a>
+          <p>Infraestructura como servicio (IaaS). La base de los servicios de Cloud-DI. Crea con OpenStack tus máquinas virtuales</p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 servicio">
+          <a href = 'http://ldap.di.ual.es' target = '_blank'>
+            <img src="images/ldap-logo.jpg" class="logo">
+          </a>
+          <p>Servicio de autenticación de usuarios. Necesario para acceder a la mayoría de servicios de Cloud-DI (ownCloud, GitLab, SVN, Redmine, Moodle, ...)</p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 servicio">
+          <a href = 'http://owncloud.di.ual.es' target = '_blank'>
+            <img src="images/owncloud-logo.png" class="logo">
+          </a>
+          <p>Servicio de almacenamiento de archivos. Un <em>Dropbox</em> privado</p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 servicio">
+          <a href = 'http://edx.di.ual.es' target = '_blank'>
+            <img src="images/edx-logo.png" class="logo">
+          </a>
+          <p>Plataforma de formación online. Fórmate en el uso básico de OpenStack-DI y en los servicios Cloud-DI</p>
+        </div><!-- /.col-lg-3 -->
+      </div><!-- /.row -->
+
+      <!-- Four columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3 servicio">
+          <a href = 'http://redmine.di.ual.es' target = '_blank'>
+            <img src="images/redmine-logo.png" class="logo">
+          </a>
+          <p>Gestión de proyectos. Gestiona también las peticiones de alta de servicios, solución de errores, y nuevas características de Cloud-DI</p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 servicio">
+          <a href = 'http://gitlab.di.ual.es' target = '_blank'>
+            <img src="images/gitlab-logo.png" class="logo">
+          </a>
+          <p>Sistema de control de versiones Git. Nuestro <i>Github</i> privado</p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 servicio">
+          <a href = 'http://moodle.di.ual.es' target = '_blank'>
+            <img src="images/moodle-logo.jpg" class="logo">
+          </a>
+          <p>Plataforma de formación online</p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 servicio">
+          <a href = 'http://redmine.di.ual.es/projects/cloud-di/issues/new' target = '_blank'>
+            <img src="images/issue.png" class="logo">          
+          </a>
+          <p><a class="btn btn-primary" href="http://redmine.di.ual.es/projects/cloud-di/issues/new" target = '_blank' role="button">Petición Cloud-DI</a></p>
+        </div><!-- /.col-lg-3 -->
+
+      </div><!-- /.row -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
