@@ -20,15 +20,15 @@ $preguntas[1] = array(
 																	'por los puertos 80 (HTTP), 22 (SSH) y 3389 (RDP para Escritorio remoto de Windows)'),
 									4 => array (
 										'pregunta' => '¿Cómo informo de un problema en alguno de los servicios de Cloud-DI?', 
-										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">Crea una petición</a> en el proyecto Cloud-DI '.
+										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto Cloud-DI '.
 																	'en http://redmine.di.ual.es informando del error'),
 									5 => array (
 										'pregunta' => '¿Cómo se pueden ampliar las prestaciones o funcionalidades que ofrece Cloud-DI?', 
-										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">Crea una petición</a> en el proyecto Cloud-DI '.
+										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto Cloud-DI '.
 																	'en http://redmine.di.ual.es solicitando el nuevo servicio y el procedimiento para configurarlo'),
 									6 => array (
 										'pregunta' => '¿Cómo puedo aprender a usar los servicios de Cloud-DI?', 
-										'respuesta' => 'En <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
+										'respuesta' => 'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
 																	'ayudarán a formarte en los servicios de Cloud-DI')
 									)
 							);
@@ -50,7 +50,7 @@ $preguntas[2] = array(
 										'respuesta' => 'Habrás recibido un email informándote de tus credenciales de acceso'),
 									4 => array (
 										'pregunta' => '¿Cómo puedo restablecer mi contraseña?', 
-										'respuesta' => 'En <a href = "http://ldap.di.ual.es">http://ldap.di.ual.es</a> puedes cambiar tu contraseña'),
+										'respuesta' => 'En <a href = "http://ldap.di.ual.es" target="_blank">http://ldap.di.ual.es</a> puedes cambiar tu contraseña'),
 									5 => array (
 										'pregunta' => 'He perdido mi contraseña', 
 										'respuesta' => 'Envía un email a <a href="mailto:diosdado@ual.es">diosdado@ual.es</a> solicitando que restablezcan tu contraseña'),
@@ -61,7 +61,7 @@ $preguntas[2] = array(
 									7 => array (
 										'pregunta' => '¿Cómo pueden registrarse nuevos miembros (p.e. alumnos de asignaturas que vayan a usar servicios ' .
 																	'de Cloud-DI)?', 
-										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">Crea una petición</a> en el proyecto ' .
+										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto ' .
 																	'Cloud-DI solicitando el alta en LDAP-DI adjuntando un archivo de hoja de cálculo con las columnas siguientes: ' .
 																	'apellidos, nombre, login, email')
 									)
@@ -96,18 +96,18 @@ $preguntas[3] = array(
 										'respuesta' => 'OpenStack-DI tiene su propio sistema de autentificación, independiente de LDAP-DI. Sólo coincide el nombre de usuario'),
 									8 => array (
 										'pregunta' => '¿Cómo pueden registrarse nuevos miembros (p.e. alumnos de asignaturas que vayan a usar OpenStack-DI)?', 
-										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">Crea una petición</a> en el proyecto ' .
+										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto ' .
 																	'Cloud-DI solicitando el alta en OpenStack-DI adjuntando un archivo de hoja de cálculo con las columnas siguientes: ' .
 																	'apellidos, nombre, login, email'),
 									9 => array (
 										'pregunta' => '¿Cómo puedo aprender a utilizar los servicios básicos de OpenStack-DI?', 
-										'respuesta' => 'En <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
+										'respuesta' => 'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
 																	'ayudarán a formarte en OpenStack-DI'),		
 									10 => array (
 										'pregunta' => '¿Cuál es mi cuota en OpenStack-DI?', 
 										'respuesta' => 'En función de qué tipo de usuario seas pertencerás a uno o más proyectos en OpenStack-DI. ' .
 																	'En cada uno de ellos tendrás una cantidad de recursos disponibles (VCPUs, RAM, disco, IPs flotantes, ...). ' .
-																	'Si necesitas aumentar tu cuota <a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">crea una ' .
+																	'Si necesitas aumentar tu cuota <a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">crea una ' .
 																	'petición</a> en el proyecto Cloud-DI en http://redmine.di.ual.es solicitando de forma justificada la ' .
 																	'ampliación de recursos.'),		
 									11 => array (
@@ -119,19 +119,19 @@ $preguntas[3] = array(
 																	'conectarnos a ella desde cualquier parte de la UAL, o desde fuera mediante VPN.<br/>' .
 																	'Si quieres que tu máquina virtual sea accesible desde la red de UAL o desde fuera mediante VPN, ' .
 																	'tendrás que asociarle una IP flotante.<br/>' .
-																	'Para más información, consulta en <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> el curso '.
+																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> el curso '.
 																	'on-line de Introducción al uso de OpenStack'),		
 									12 => array (
 										'pregunta' => '¿Cómo puedo crear una instancia Windows?', 
 										'respuesta' => 'Lanza una instancia seleccionando una imagen o snapshot disponible de Windows. Configura el puerto RDP (3389) para que ' .
 																	'puedas acceder por escritorio remoto a ella.<br/>' .
-																	'Para más información, consulta en <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> el curso '.
+																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> el curso '.
 																	'on-line de Introducción al uso de OpenStack'),		
 									13 => array (
 										'pregunta' => '¿Cómo puedo crear una instancia Linux?', 
 										'respuesta' => 'Asegúrate de haber subido a OpenStack-DI tu clave pública. A continuación, lanza una instancia seleccionando una imagen ' .
 																	'o snapshot disponible de Linux. Configura el puerto SSH (22) para que puedas acceder a ella.<br/>' .
-																	'Para más información, consulta en <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> el curso '.
+																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> el curso '.
 																	'on-line de Introducción al uso de OpenStack'),		
 									14 => array (
 										'pregunta' => 'No puedo conectarme a una instancia de Windows', 
@@ -167,7 +167,7 @@ $preguntas[4] = array(
 									3 => array (
 										'pregunta' => '¿Cuál es mi cuota en ownCloud-DI?',  
 										'respuesta' => 'De forma predeterminada se tienen 20 GB de cuota de almacenamiento.</br> ' .
-																	'Si necesitas aumentar tu cuota <a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">crea una ' .
+																	'Si necesitas aumentar tu cuota <a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">crea una ' .
 																	'petición</a> en el proyecto Cloud-DI en http://redmine.di.ual.es solicitando de forma justificada la ' .
 																	'ampliación de la cuota.'),
 									4 => array (
@@ -175,13 +175,13 @@ $preguntas[4] = array(
 										'respuesta' => 'Las credenciales que tienes almacenadas en LDAP-DI'),
 									5 => array (
 										'pregunta' => '¿Existe un cliente para mi ordenador, tablet o smartphone?', 
-										'respuesta' => '<a href = "https://owncloud.org/install/#install-clients">Descarga tu cliente</a> para tu ordenador ' .
+										'respuesta' => '<a href = "https://owncloud.org/install/#install-clients" target="_blank">Descarga tu cliente</a> para tu ordenador ' .
 																	'Mac, Windows o Linux o para tu dispositivo táctil Android o iOS.</br>' .
-																	'En <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
+																	'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
 																	'de Cloud-DI, donde hay una sección dedicada a instalación de clientes ownCloud'),
 									6 => array (
 										'pregunta' => '¿Puedo usar mi cuenta ownCloud-DI como una unidad WebDAV?', 
-										'respuesta' => 'Sí, en <a href = "http://moodle.di.ual.es">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
+										'respuesta' => 'Sí, en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
 																	'de Cloud-DI, donde hay una sección dedicada la configuración de WebDAV')
 									)
 							);
@@ -201,9 +201,9 @@ $preguntas[5] = array(
 									4 => array (
 										'pregunta' => '¿Por qué no puedo crear proyectos en Redmine-DI?', 
 										'respuesta' => 'De forma predeterminada, no puedes crear proyectos en Redmine-DI. Tendrás que ' .
-																	'<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new">crear una petición</a> en ' .
+																	'<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">crear una petición</a> en ' .
 																	'el proyecto Cloud-DI en http://redmine.di.ual.es solicitando el rol de Creador de proyecto</br>'.
-																	'En <a href = "http://edx.di.ual.es">http://edx.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
+																	'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
 																	'de Cloud-DI, donde hay una sección dedicada a la creación de proyectos en Redmine')
 									)
 							);
@@ -216,7 +216,7 @@ $preguntas[6] = array(
 										'respuesta' => 'Soporte para docencia online'),
 									2 => array (
 										'pregunta' => '¿Qué personas pueden tener acceso a Moodle-DI?', 
-										'respuesta' => 'Todas las personas que estén registradas en LDAP-DI'),
+										'respuesta' => 'El acceso será libre para todos los cursos públicos. Para el acceso a cursos privados, y creación de cursos será necesario estar registrado en LDAP-DI'),
 									3 => array (
 										'pregunta' => '¿Cuáles son mis credenciales de acceso a Moodle-DI?', 
 										'respuesta' => 'Las credenciales que tienes almacenadas en LDAP-DI')
