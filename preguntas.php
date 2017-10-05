@@ -149,7 +149,11 @@ $preguntas[3] = array(
 									17 => array (
 										'pregunta' => '¿Cómo afecta el <i>flavour</i> de mi instancia a futuros <i>snapshots</i> ?', 
 										'respuesta' => 'Al crear una imagen a partir de un <i>snapshot</i>, la nueva imagen tendrá que tener un <i>flavour</i> que tenga un disco ' .
-																	'con al menos la misma capacidad que tenía la imagen original sobre la que se creó el <i>snapshot</i>.')
+																	'con al menos la misma capacidad que tenía la imagen original sobre la que se creó el <i>snapshot</i>.'),
+									18 => array (
+										'pregunta' => 'Mi instancia se está ejecutando y apenas puedo hacer nada con ella (Posible problema MTU) ?', 
+										'respuesta' => 'Quizá tengas un problema de MTU y los paquetes que usa tu instancia son más grandes que el tamaño que usa la red sobre la que está creada. ' .
+																		'Consulta <a href = "http://ualmtorres.github.io/howtos/CloudDIOcata/#truerecuperaci-n-de-snapshots-del-anterior-openstack-di" target  = "_blank">este enlace</a>.')
 									)
 
 							);
