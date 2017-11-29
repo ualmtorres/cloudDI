@@ -248,4 +248,71 @@ $preguntas[6] = array(
 							);
 */
 
+$preguntas[7] = array(
+							'categoria' => 'Máquinas virtuales Windows',
+							'preguntas' => array(
+									1 => array (
+										'pregunta' => '¿Cuál es mi usuario y mi contraseña?', 
+										'respuesta' => 'Contacta con <a href="mailto:clouddi@ual.es?Subject=Usuario y contraseña de MV Windows">Cloud-DI Team</a>'),
+									2 => array (
+										'pregunta' => '¿Por qué no puedo conectarme?', 
+										'respuesta' => 'Además de revisar tu usuario y contraseña, recuerda que en los grupos de seguridad tienes que tener abierto el puerto 3389 para la comunicación RDP'),
+									3 => array (
+										'pregunta' => '¿Qué cliente uso para conectarme?', 
+										'respuesta' => 'Microsoft ofrece Remote Desktop Client. Google te ayudará a encontrarlo')
+									)
+							);
+
+$preguntas[8] = array(
+							'categoria' => 'Máquinas virtuales XUbuntu',
+							'preguntas' => array(
+									1 => array (
+										'pregunta' => '¿En qué consisten las máquinas virtuales XUbuntu?', 
+										'respuesta' => 'Son máquinas virtuales Ubuntu con el entorno de escritorio Xfce instalado'),
+									2 => array (
+										'pregunta' => '¿Qué cliente utilizo para conectarme?', 
+										'respuesta' => 'Se recomienda usar X2Go. En clientes Mac también hay que instalar XQuartz'),
+									3 => array (
+										'pregunta' => '¿Cómo defino una conexión en X2Go?', 
+										'respuesta' => '<ul>
+																		<li>Nombre para la sesión: nombre que desees dar a tu conexión</li>
+																		<li>Host: IP flotante devuelta por OpenStack-DI</li>
+																		<li>Usuario: ubuntu</li>
+																		<li>Puerto SSH: 22</li>
+																		<li>Claves RSA/DSA: Nombre absoluto (incluyendo path) del archivo de clave privada correspondiente a clave púlica utilizada para crear la instancia XUbuntu (p.e. /home/hommer/.ssh/id_rsa en sistemas Linux o /Users/hommer/.ssh/id_rsa en sistemas Mac</li>
+																		<li>Tipo de sesion: XFCE</li>
+																		</ul> '),
+									4 => array (
+										'pregunta' => '¿Por qué no puedo conectarme a la máquina virtual con X2Go?', 
+										'respuesta' => 'Además de revisar tu clave privada, usuario, puerto y tipo de sesión, recuerda que en los grupos de seguridad del proyecto de OpenStack en el que está la máquina virtual tiene que tener abierto el puerto 22 para la comunicación SSH'),
+									5 => array (
+										'pregunta' => '¿Tiene algún software presintalado?', 
+										'respuesta' => 'Git, JDK 1.8, Sublime Text, Terminator y Midnight commander'),
+									6 => array (
+										'pregunta' => '¿Por qué no me funciona el tabulador para completar comandos en la terminal?', 
+										'respuesta' => '<ul>
+																		<li>Edita el archivo <pre>.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml</pre></li>
+																		<li>Busca <pre>roperty name="&lt;Super&gt;Tab" type="string" value="switch_window_key"/></pre></li>
+																		<li>Sustituye el fragmento de código anterior por <pre>roperty name=”&lt;Super&gt;Tab” type=”empty”/></pre></li>
+																		</ul>
+																	 '),
+									7 => array (
+										'pregunta' => '¿Qué usuario utilizo para conectarme?', 
+										'respuesta' => 'ubuntu.<br><b>IMPORTANTE: REVISA SI OTROS USUARIOS TIENEN ACCESO A TU MAQUINA VIRTUAL. CONSULTA QUE HACER AL USAR LA MAQUINA VIRTUAL POR PRIMERA VEZ</b>' ),
+									8 => array (
+										'pregunta' => '¿Debo hacer alguna operación inicial al usar mi máquina virtual XUbuntu por primera vez?', 
+										'respuesta' => 'La imagen utilizada para crear tu instancia proviene de un snapshot realizado a una máquina virtual existente. La clave pública del usuario que creó el snapshot sigue estando en tu máquina virtual.
+																		<ul>
+																			<li>Elimina las claves públicas correspondientes a usuarios a los que no quieres permitir la conexión a tu máquina virtual editando los archivos:
+																			<pre>/home/user/ubuntu/.ssh/authorized_keys
+/home/user/clouduser/.ssh/authorized_keys
+																			</pre>
+																			</li>
+																			<li>Cambia el password de clouduser <pre>passwd clouduser</pre></li>
+
+																		</ul>
+																		')
+
+									)
+							);
 ?>
