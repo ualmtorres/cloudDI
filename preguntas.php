@@ -153,7 +153,11 @@ $preguntas[3] = array(
 									18 => array (
 										'pregunta' => 'Mi instancia se está ejecutando y apenas puedo hacer nada con ella (Posible problema MTU) ?', 
 										'respuesta' => 'Quizá tengas un problema de MTU y los paquetes que usa tu instancia son más grandes que el tamaño que usa la red sobre la que está creada. ' .
-																		'Consulta <a href = "http://ualmtorres.github.io/howtos/CloudDIOcata/#truerecuperaci-n-de-snapshots-del-anterior-openstack-di" target  = "_blank">este enlace</a>.')
+																		'Consulta <a href = "http://ualmtorres.github.io/howtos/CloudDIOcata/#truerecuperaci-n-de-snapshots-del-anterior-openstack-di" target  = "_blank">este enlace</a>.'),
+									19 => array (
+										'pregunta' => 'He creado un snapshot y otros usuarios no pueden verlo', 
+										'respuesta' => 'Los snapshots o imágenes creadas son privadas. Sólo los usuarios con rol de administrador pueden hacerlas públicas. ' .
+																		'Contacta con <a href="mailto:clouddi@ual.es?Subject=Activar imagen/snapshot como público">Cloud-DI Team</a> indicando el nombre del snapshot o imagen para que la activen como pública')
 									)
 
 							);
