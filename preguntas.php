@@ -263,7 +263,10 @@ $preguntas[7] = array(
 										'respuesta' => 'Además de revisar tu usuario y contraseña, recuerda que en los grupos de seguridad tienes que tener abierto el puerto 3389 para la comunicación RDP'),
 									3 => array (
 										'pregunta' => '¿Qué cliente uso para conectarme?', 
-										'respuesta' => 'Microsoft ofrece Remote Desktop Client. Google te ayudará a encontrarlo')
+										'respuesta' => 'Microsoft ofrece Remote Desktop Client. Google te ayudará a encontrarlo'),
+									4 => array (
+										'pregunta' => 'Mi licencia ha caducado. ¿Qué hago?', 
+										'respuesta' => 'Puedes introudir una clave de producto de tu cuenta de MSDN (Microsoft Imagine) o rearmar la licencia por otros seis meses. El rearmar sólo se puede hacer una vez. Consulta <a href = "https://social.technet.microsoft.com/wiki/contents/articles/32122.windows-server-extend-expired-evaluation-period.aspx" target = "_blank">este enlace oficial</a> para más información sobre la operación de rearmar.')
 									)
 							);
 
