@@ -29,7 +29,17 @@ $preguntas[1] = array(
 									6 => array (
 										'pregunta' => '¿Cómo puedo aprender a usar los servicios de Cloud-DI?', 
 										'respuesta' => 'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
-																	'ayudarán a formarte en los servicios de Cloud-DI')
+																	'ayudarán a formarte en los servicios de Cloud-DI'),
+									7 => array (
+										'pregunta' => '¿Cuál en es la infraestructura de Cloud-DI?', 
+										'respuesta' => 'Cloud-DI es un cloud <a href = "https://www.openstack.org/" target="_blank">OpenStack</a> on-premise con unos recursos globales de 384 cores y 2.25 TB de RAM. Cloud-DI está formado por 12 nodos de cómputo, un NAS para almacenamiento de bloques, un nodo de control y un nodo de red. ' . 
+										'Las características de cada uno son: '. 
+										'<ul>'.
+										'<li>Nodo de cómputo: Procesador AMD 6370p de 16 cores. 192 GB de RAM y 3 TB de HDD</li>'.
+										'<li>Nodo de control: Procesador AMD 6370p de 16 cores, 64 GB de RAM, 2 TB de HDD</li>'.
+										'<li>Nodo de red: Procesador AMD 6370p de 16 cores, 64 GB de RAM, 1 TB de HDD</li>'.
+										'<li>NAS: 22 TB de HDD'.
+										'<ul>')
 									)
 							);
 
