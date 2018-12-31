@@ -7,8 +7,9 @@ $preguntas[1] = array(
 										'pregunta' => '¿Qué servicios ofrece Cloud-DI', 
 										'respuesta' => 'Ofrece Infraestructura como servicio (IaaS) mediante <i>OpenStack</i> - con el puedes crear máquinas virtuales en la nube -, '.
 																	' alojamiento de archivos (similar a <i>Dropbox</i>), Sistemas de control de versiones ' .
-																	'(<i>Git</i> y <i>Subversion</i>), Gestión de proyectos (<i>Redmine</i>), y plataformas de docencia on-line ' .
-																	'(<i>Moodle</i>'),
+																	'(<i>Git</i> y <i>Subversion</i>), Gestión de proyectos (<i>Redmine</i>), plataforma de docencia on-line ' .
+																	'(<i>Moodle</i>), Integración contínua (<i>Jenkins</i>), Kubernetes como servicio (<i>Rancher</i>) '.
+																	'y Plataforma como servicio (<i>OpenShift Kubernetes Distribution</i>)'),
 									2 => array (
 										'pregunta' => '¿Qué personas pueden tener acceso a estos servicios?', 
 										'respuesta' => 'Miembros del Departamento de Informática, becarios o contratados de investigación asociados al ' .
@@ -21,18 +22,18 @@ $preguntas[1] = array(
 									4 => array (
 										'pregunta' => '¿Cómo informo de un problema en alguno de los servicios de Cloud-DI?', 
 										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto Cloud-DI '.
-																	'en http://redmine.di.ual.es informando del error'),
+																	'en https://redmine.di.ual.es informando del error'),
 									5 => array (
 										'pregunta' => '¿Cómo se pueden ampliar las prestaciones o funcionalidades que ofrece Cloud-DI?', 
 										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto Cloud-DI '.
-																	'en http://redmine.di.ual.es solicitando el nuevo servicio y el procedimiento para configurarlo'),
+																	'en https://redmine.di.ual.es solicitando el nuevo servicio y el procedimiento para configurarlo'),
 									6 => array (
 										'pregunta' => '¿Cómo puedo aprender a usar los servicios de Cloud-DI?', 
-										'respuesta' => 'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
-																	'ayudarán a formarte en los servicios de Cloud-DI'),
+										'respuesta' => 'En <a href = "https://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
+																	'ayudarán a formarte en los servicios de Cloud-DI. Consulta también la <a href ="https://ualmtorres.github.io/OpenStackDI/" target = "_blank"> Guía de uso de OpenStack-DI.' ),
 									7 => array (
 										'pregunta' => '¿Cuál en es la infraestructura de Cloud-DI?', 
-										'respuesta' => 'Cloud-DI es un cloud <a href = "https://www.openstack.org/" target="_blank">OpenStack</a> on-premise con unos recursos globales de 384 cores y 2.25 TB de RAM. Cloud-DI está formado por 12 nodos de cómputo, un NAS para almacenamiento de bloques, un nodo de control y un nodo de red. ' . 
+										'respuesta' => 'Cloud-DI es un cloud <a href = "https://www.openstack.org/" target="_blank">OpenStack</a> on-premise con unos recursos globales de 512 cores y 3 TB de RAM. Cloud-DI está formado por 16 nodos de cómputo, un NAS para almacenamiento de bloques, un nodo de control y un nodo de red. ' . 
 										'Las características de cada uno son: '. 
 										'<ul>'.
 										'<li>Nodo de cómputo: Procesador AMD 6370p de 16 cores. 192 GB de RAM y 3 TB de HDD</li>'.
@@ -49,9 +50,8 @@ $preguntas[2] = array(
 							'preguntas' => array(
 									1 => array (
 										'pregunta' => '¿Qué servicio ofrece LDAP-DI?', 
-										'respuesta' => 'Ofrece autentificación a los servicios de almacenamiento de archivos (<i>ownCloud</i>), control de versiones ' .
-																	'(<i>GitLab, Subversion</i>), gestión de proyectos (<i>Redmine</i>) y docencia online (<i>Moodle</i>).'. 
-																	'<br/><b>No ofrece autentificación a edX ni a OpenStack</b>.'),
+										'respuesta' => 'Ofrece autentificación a los servicios de almacenamiento de archivos (<i>ownCloud</i>), gestión de proyectos (<i>Redmine</i>), docencia online (<i>Moodle</i>) y Kubernetes como servicio (<i>Rancher</i>).'. 
+																	'<br/><b>No ofrece autentificación a OpenStack, ni a GitLab Docencia</b>.'),
 									2 => array (
 										'pregunta' => '¿Cuál es mi nombre de usuario?', 
 										'respuesta' => 'El de Campus Virtual'),
@@ -60,7 +60,7 @@ $preguntas[2] = array(
 										'respuesta' => 'Habrás recibido un email informándote de tus credenciales de acceso'),
 									4 => array (
 										'pregunta' => '¿Cómo puedo restablecer mi contraseña?', 
-										'respuesta' => 'En <a href = "http://ldap.di.ual.es" target="_blank">http://ldap.di.ual.es</a> puedes cambiar tu contraseña'),
+										'respuesta' => 'En <a href = "https://ldap.di.ual.es" target="_blank">http://ldap.di.ual.es</a> puedes cambiar tu contraseña'),
 									5 => array (
 										'pregunta' => 'He perdido mi contraseña', 
 										'respuesta' => 'Envía un email a <a href="mailto:diosdado@ual.es">diosdado@ual.es</a> solicitando que restablezcan tu contraseña'),
@@ -103,7 +103,7 @@ $preguntas[3] = array(
 																	'de seguridad se recomienda cambiarla con cierta frecuencia'),		
 									7 => array (
 										'pregunta' => 'No puedo conectarme a OpenStack-DI con mis credenciales de LDAP-DI', 
-										'respuesta' => 'OpenStack-DI tiene su propio sistema de autentificación, independiente de LDAP-DI. Sólo coincide el nombre de usuario'),
+										'respuesta' => 'OpenStack-DI tiene su propio sistema de autentificación, <b>independiente de LDAP-DI y Campus Virtual</b>. Sólo coincide el nombre de usuario'),
 									8 => array (
 										'pregunta' => '¿Cómo pueden registrarse nuevos miembros (p.e. alumnos de asignaturas que vayan a usar OpenStack-DI)?', 
 										'respuesta' => '<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">Crea una petición</a> en el proyecto ' .
@@ -111,7 +111,7 @@ $preguntas[3] = array(
 																	'apellidos, nombre, login, email'),
 									9 => array (
 										'pregunta' => '¿Cómo puedo aprender a utilizar los servicios básicos de OpenStack-DI?', 
-										'respuesta' => 'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
+										'respuesta' => 'En <a href = "https://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> encontrarás cursos on-line que te '.
 																	'ayudarán a formarte en OpenStack-DI'),		
 									10 => array (
 										'pregunta' => '¿Cuál es mi cuota en OpenStack-DI?', 
@@ -129,19 +129,19 @@ $preguntas[3] = array(
 																	'conectarnos a ella desde cualquier parte de la UAL, o desde fuera mediante VPN.<br/>' .
 																	'Si quieres que tu máquina virtual sea accesible desde la red de UAL o desde fuera mediante VPN, ' .
 																	'tendrás que asociarle una IP flotante.<br/>' .
-																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> el curso '.
+																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> el curso '.
 																	'on-line de Introducción al uso de OpenStack'),		
 									12 => array (
 										'pregunta' => '¿Cómo puedo crear una instancia Windows?', 
 										'respuesta' => 'Lanza una instancia seleccionando una imagen o snapshot disponible de Windows. Configura el puerto RDP (3389) para que ' .
 																	'puedas acceder por escritorio remoto a ella.<br/>' .
-																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> el curso '.
+																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> el curso '.
 																	'on-line de Introducción al uso de OpenStack'),		
 									13 => array (
 										'pregunta' => '¿Cómo puedo crear una instancia Linux?', 
 										'respuesta' => 'Asegúrate de haber subido a OpenStack-DI tu clave pública. A continuación, lanza una instancia seleccionando una imagen ' .
 																	'o snapshot disponible de Linux. Configura el puerto SSH (22) para que puedas acceder a ella.<br/>' .
-																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> el curso '.
+																	'Para más información, consulta en <a href = "http://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> el curso '.
 																	'on-line de Introducción al uso de OpenStack'),		
 									14 => array (
 										'pregunta' => 'No puedo conectarme a una instancia de Windows', 
@@ -186,7 +186,7 @@ $preguntas[4] = array(
 										'pregunta' => '¿Cuál es mi cuota en ownCloud-DI?',  
 										'respuesta' => 'De forma predeterminada se tienen 20 GB de cuota de almacenamiento.</br> ' .
 																	'Si necesitas aumentar tu cuota <a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">crea una ' .
-																	'petición</a> en el proyecto Cloud-DI en http://redmine.di.ual.es solicitando de forma justificada la ' .
+																	'petición</a> en el proyecto Cloud-DI en https://redmine.di.ual.es solicitando de forma justificada la ' .
 																	'ampliación de la cuota.'),
 									4 => array (
 										'pregunta' => '¿Cuáles son mis credenciales de acceso a ownCloud-DI?', 
@@ -195,16 +195,51 @@ $preguntas[4] = array(
 										'pregunta' => '¿Existe un cliente para mi ordenador, tablet o smartphone?', 
 										'respuesta' => '<a href = "https://owncloud.org/install/#install-clients" target="_blank">Descarga tu cliente</a> para tu ordenador ' .
 																	'Mac, Windows o Linux o para tu dispositivo táctil Android o iOS.</br>' .
-																	'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
+																	'En <a href = "http://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
 																	'de Cloud-DI, donde hay una sección dedicada a instalación de clientes ownCloud'),
 									6 => array (
 										'pregunta' => '¿Puedo usar mi cuenta ownCloud-DI como una unidad WebDAV?', 
-										'respuesta' => 'Sí, en <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
+										'respuesta' => 'Sí, en <a href = "http://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
 																	'de Cloud-DI, donde hay una sección dedicada la configuración de WebDAV')
 									)
 							);
 
 $preguntas[5] = array(
+							'categoria' => 'Rancher-DI',
+							'preguntas' => array(
+									1 => array (
+										'pregunta' => '¿Qué servicio ofrece Rancher-DI?', 
+										'respuesta' => 'Kubernetes como servicio y Administración de clusters Kubernetes en varios proveedores: Amazon, Azure, Google, OpenStack, ...'),
+									2 => array (
+										'pregunta' => '¿Qué personas pueden tener acceso a Rancher-DI?', 
+										'respuesta' => 'Miembros del Departamento de Informática, becarios o contratados de investigación asociados al ' .
+																	'Departamento de Informática.'),
+									3 => array (
+										'pregunta' => '¿Cuáles son mis credenciales de acceso a Rancher-DI?', 
+										'respuesta' => 'Las credenciales que tienes almacenadas en LDAP-DI'),
+									4 => array (
+										'pregunta' => '¿Cómo puedo usar OpenStack-DI para desplegar un cluster Kubernetes desde Rancher-DI?', 
+										'respuesta' => 'Consulta el <a href = "http://ualmtorres.github.io/howtos/RancherOpenStack/" target="_blank">Tutorial sobre Uso de OpenStack como proveedor de infraestructura en Rancher</a>')
+									)
+							);
+
+$preguntas[6] = array(
+							'categoria' => 'OpenShift-DI',
+							'preguntas' => array(
+									1 => array (
+										'pregunta' => '¿Qué servicio ofrece OpenShift-DI?', 
+										'respuesta' => 'Plataforma como servicio para despliegue y entrega contínua sobre plataformas Javascript, Node, PHP, Ruby, Perl, ...'),
+									2 => array (
+										'pregunta' => '¿Qué personas pueden tener acceso a OpenShift-DI?', 
+										'respuesta' => 'Miembros del Departamento de Informática, becarios o contratados de investigación asociados al ' .
+																	'Departamento de Informática.'),
+									3 => array (
+										'pregunta' => '¿Cuáles son mis credenciales de acceso a OpenShift-DI?', 
+										'respuesta' => 'La autentificación se realiza con las credenciales de OpenStack-DI'),
+									)
+							);
+
+$preguntas[7] = array(
 							'categoria' => 'Redmine-DI',
 							'preguntas' => array(
 									1 => array (
@@ -221,12 +256,12 @@ $preguntas[5] = array(
 										'respuesta' => 'De forma predeterminada, no puedes crear proyectos en Redmine-DI. Tendrás que ' .
 																	'<a href = "http://redmine.di.ual.es/projects/cloud-di/issues/new" target="_blank">crear una petición</a> en ' .
 																	'el proyecto Cloud-DI en http://redmine.di.ual.es solicitando el rol de Creador de proyecto</br>'.
-																	'En <a href = "http://moodle.di.ual.es" target="_blank">http://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
+																	'En <a href = "http://moodle.di.ual.es" target="_blank">https://moodle.di.ual.es</a> encontrarás el curso on-line sobre servicios ' .
 																	'de Cloud-DI, donde hay una sección dedicada a la creación de proyectos en Redmine')
 									)
 							);
 
-$preguntas[6] = array(
+$preguntas[8] = array(
 							'categoria' => 'Moodle-DI',
 							'preguntas' => array(
 									1 => array (
@@ -262,7 +297,7 @@ $preguntas[6] = array(
 							);
 */
 
-$preguntas[7] = array(
+$preguntas[9] = array(
 							'categoria' => 'Máquinas virtuales Windows',
 							'preguntas' => array(
 									1 => array (
@@ -280,7 +315,7 @@ $preguntas[7] = array(
 									)
 							);
 
-$preguntas[8] = array(
+$preguntas[10] = array(
 							'categoria' => 'Máquinas virtuales XUbuntu',
 							'preguntas' => array(
 									1 => array (
